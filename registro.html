@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulario de Registro de Usuario</title>
+    <link href="css/Registro.css" rel="stylesheet" />
+</head>
+<body>
+ 
+<div id="formulario-container">
+<div class="titulo">CAROTA</div>
+        <div class="titulo2">Registro de Usuario</div>
+   
+    <form action="Index-SesionIniciada.html" method="post">
+        <label for="nombre" class="estilo-label" >Nombre:</label>
+        <input type="text" id="nombre"  name="nombre" maxlength="140" size="20" required><br><br>
+
+        <label for="apellido1" class="estilo-label">Primer Apellido:</label>
+			<input type="text" id="apellido1" name="apellido1" maxlength="140" size="20" required><br><br>
+
+        <label for="apellido2" class="estilo-label">Segundo Apellido:</label>
+			<input type="text" id="apellido2" name="apellido2" maxlength="140" size="20" required><br><br>
+
+        <label for="dni_nie" class="estilo-label" >DNI/NIE:</label>
+			<input type="text" id="dni_nie" name="dni_nie" maxlength="9" SIZE="8" required><br><br>
+
+        <label for="correo" class="estilo-label">Cuenta de Correo:</label>
+			<input type="email" id="correo" name="correo" size="30"  placeholder="carotanews@gmail.com" required><br><br>
+
+            <label for="contrasena"class="estilo-label3">Contraseña:</label>
+				<input type="password" id="contrasena" name="contrasena" minlength="8" size="30" maxlength="100" title="La contraseña debe tener al menos 8 caracteres" required><br><br>
+
+            <label for="confirmar_contrasena"class="estilo-label3">Confirmar Contraseña:</label>
+				<input type="password" id="confirmar_contrasena" name="confirmar_contrasena" minlength="8" maxlength="100" size="30" required ><br><br>
+
+        <label for="fecha_nacimiento" class="estilo-label">Fecha de Nacimiento:</label>
+			<input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required min="1923-01-01" max="2005-12-31"><br><br>
+
+        <label class="estilo-label3">Género:</label>
+			<input type="radio" id="masculino" name="genero" value="Masculino" required> Masculino
+			<input type="radio" id="femenino" name="genero" value="Femenino" required> Femenino
+			<input type="radio" id="otro" name="genero" value="Otro" required> Otro<br><br>
+		
+		<label for="paises"class="estilo-label3">País:</label>
+		<select id="paises" name="paises" required>
+            <option value="Europa">Europa</option>
+            <option value="España">España</option>
+            <option value="Francia">Francia</option>
+            <option value="Alemania">Alemania</option>
+            <option value="Italia">Italia</option>
+            <option value="Reino Unido">Reino Unido</option>
+			<option value="Ninguna">Ninguna de las anteriores</option>
+        </select><br><br>
+		
+		<label for="comunidades"class="estilo-label3">Comunidad Autónoma:</label>
+		<select id="comunidades" name="comunidades" >
+			<option value="Andalucía">Andalucía</option>
+			<option value="Cataluña">Cataluña</option>
+			<option value="Madrid">Comunidad de Madrid</option>
+			<option value="Valencia">Comunidad Valenciana</option>
+			<option value="Paris">Paris</option>
+			<option value="Berlin">Berlin</option>
+			<option value="Roma">Roma</option>
+			<option value="Inglaterra">Inglaterra</option>
+			<option value="Ninguna">Ninguna de las anteriores</option>
+		</select><br><br>
+		
+		        <label class="estilo-label3" >Tipos de Noticia:</label>
+			<input type="checkbox" id="noticia1" name="noticias[]" value="Deportes">Deportes
+			<input type="checkbox" id="noticia2" name="noticias[]" value="Tecnología">Tecnología
+			<input type="checkbox" id="noticia3" name="noticias[]" value="Política">Opinión
+			<input type="checkbox" id="noticia4" name="noticias[]" value="Cultura">Cultura<br>
+			<input type="checkbox" id="noticia5" name="noticias[]" value="internacional">Internacional
+			<input type="checkbox" id="noticia6" name="noticias[]" value="nacional">Nacional
+			<input type="checkbox" id="noticia7" name="noticias[]" value="Economía">Ciencia<br><br>
+
+	    			
+       
+        <label class="estilo-label3"  for="terminos">Términos y Condiciones</label>
+		 <input type="checkbox" id="terminos" name="terminos" required> He leído y acepto la Política de Privacidad y las condiciones generales.<br><br>
+		
+			
+		<input type="submit" value="Registrarse">
+    </form>
+</body>
+</html>

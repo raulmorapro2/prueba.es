@@ -1,0 +1,115 @@
+/* Establece el fondo del cuerpo del documento en un color gris claro*/
+body {
+			background-color: #ded9de;
+        }
+		/*Configura un contenedor con texto centrado, fuente 'luminari', texto blanco y un tamaño de fuente de 2em.*/
+			.container {
+            display: flex;
+			text-align: center;
+			font-family: 'luminari';
+			color: white;
+			font-size: 2em;
+			
+		}
+		/*Configura otro contenedor con contenido centrado horizontal y verticalmente.*/
+			.container2 {
+            display: flex;
+			justify-content: center;
+			text-align: center;
+        }
+		/*Define el estilo del título principal con un fondo azul , texto blanco, centrado y con un tamaño de fuente grande.*/
+			.titulo {
+			font-size: 125px;
+            width: 100%;
+            height: 150px;
+            margin: 10px;
+            background-color: #0093FF;
+			text-align: center;
+			
+        }
+	
+			.titulo2 {
+			font-size: 50px;
+            width: 40%;
+            height: 70px;
+            margin: 10px;
+            background-color: #0093FF;
+			text-align: center;
+			
+
+        }
+		/*Configura tablas para ocupar el 100% del ancho y agrega un pequeño margen.*/
+			table {
+			width: 100%;
+			margin: 10px;
+		}
+			caption{
+			font-size: 60px;
+			}
+
+			/*Define el estilo del pie de página con texto centrado y un fondo azul.*/
+			footer {
+			text-align: center;
+			margin: 10px;
+            background-color: #0093FF;
+		}
+/*Agrega un pequeño relleno interno al formulario.*/
+			form {
+			padding: 5px;
+			
+		}
+		/*Configura los acrónimos en cursiva y con un color chocolate.*/
+			abbr {
+		  font-style: italic;
+		  color: chocolate;
+		}
+		/*Establece el estilo del menú principal con fondo oscuro, texto blanco, y configuración de diseño.*/
+		.menu1 {
+			background-color: #333;
+			padding: 40px 0;
+			font-size: 30px;
+            width: 100%;
+            height: 10px;
+            margin: 0px;
+			text-align: center;
+			font-family: 'helvetica';
+			
+		  }
+/*Configura el estilo de un menú con fondo oscuro y un pequeño relleno interno.*/
+		.menu {
+			background-color: #333;
+			padding: 10px 0;
+		  }
+		  /* Configura el texto de navegación para estar centrado.*/
+		  nav {
+			text-align: center;
+		  }
+		 /*Configura el estilo de los enlaces en el menú, eliminando el subrayado, estableciendo el color del texto y aplicando transiciones suaves al color de fondo.*/ 
+		  nav a {
+			text-decoration: none;
+			color: #fff;
+			padding: 10px 15px;
+			margin: 0 5px;
+			border-radius: 5px;
+			transition: background-color 0.3s ease;
+		  }
+		/*Define el cambio de color de fondo al pasar el ratón sobre los enlaces en el menú.*/  
+		  nav a:hover {
+			background-color: #555;
+		  }
+		 /*Configura el color de los encabezados y párrafos.*/
+		  h1 {
+			color: black;
+		  }
+		 
+		  h2 {
+			color: black;
+		  }
+
+		  h3 {
+			color: black;
+		  }
+
+		  p {
+			color: rgba(0, 0, 0, 0.884);
+		  }
